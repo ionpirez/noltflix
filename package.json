@@ -16,8 +16,5 @@
     "server": "node server/mock-api.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "engines": {
-    "node": "4.1.1"
   }
 }
