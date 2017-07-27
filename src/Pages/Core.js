@@ -61,6 +61,7 @@ class Core extends Component{
         const type = {
           type:'delete'
         }
+        this.setState({search:true})
         this.props.action(type)
       })
     })

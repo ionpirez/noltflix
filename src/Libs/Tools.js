@@ -6,7 +6,7 @@ export function Search(title){
   return fetch(myRequest)
 }
 export function Add(obj){
-  const VAR_URL = "http://localhost:5500/api/favorites"
+  const VAR_URL = "https://polar-forest-35896.herokuapp.com"
   var myInit = { method: 'POST',
                  cache: 'default',
                  headers: {
@@ -18,7 +18,7 @@ export function Add(obj){
 }
 
 export function Get(){
-  const VAR_URL = "http://localhost:5500/api/favorites"
+  const VAR_URL = "https://polar-forest-35896.herokuapp.com"
   var myInit = { method: 'GET',
                  cache: 'default' };
   var myRequest = new Request(VAR_URL, myInit);
@@ -26,7 +26,7 @@ export function Get(){
 }
 export function Delete(id){
   const show_id = id.id
-  const VAR_URL = "http://localhost:5500/api/favorites/"+show_id
+  const VAR_URL = "https://polar-forest-35896.herokuapp.com/"+show_id
   var myInit = { method: 'Delete',
                  cache: 'default' };
   var myRequest = new Request(VAR_URL, myInit);
