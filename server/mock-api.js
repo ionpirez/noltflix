@@ -63,8 +63,7 @@ app.delete('/api/favorites/:id', function(req,res){
     res.status(500).json({ "message": "internal error" });
   }
 });
-var port = 5500;
+var port = 5000;
 
 app.listen(port);
-console.log('hello mother fucker!!!')
 console.log('Mock server running on port ' + port);
