@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_star_half</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Workspace-Ui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets-Exportable" transform="translate(-195.000000, -171.000000)" fill="#FF3030">
+            <path d="M210,176.43 L204.6075,175.965 L202.5,171 L200.3925,175.9725 L195,176.43 L199.095,179.9775 L197.865,185.25 L202.5,182.4525 L207.135,185.25 L205.9125,179.9775 L210,176.43 L210,176.43 Z M199.68,182.7525 L200.43,179.5425 L197.94,177.3825 L201.225,177.0975 L202.5,174.075 L202.5,181.05 L199.68,182.7525 Z" id="icon_star_half" transform="translate(202.500000, 178.125000) scale(-1, 1) translate(-202.500000, -178.125000) "></path>
+        </g>
+    </g>
+</svg>

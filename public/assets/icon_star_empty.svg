@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_star_empty</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Workspace-Ui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets-Exportable" transform="translate(-220.000000, -171.000000)" fill="#FF3030">
+            <path d="M235,176.43 L229.6075,175.965 L227.5,171 L225.3925,175.9725 L220,176.43 L224.095,179.9775 L222.865,185.25 L227.5,182.4525 L232.135,185.25 L230.9125,179.9775 L235,176.43 L235,176.43 Z M227.5,181.05 L224.68,182.7525 L225.43,179.5425 L222.94,177.3825 L226.225,177.0975 L227.5,174.075 L228.7825,177.105 L232.0675,177.39 L229.5775,179.55 L230.3275,182.76 L227.5,181.05 L227.5,181.05 Z" id="icon_star_empty"></path>
+        </g>
+    </g>
+</svg>

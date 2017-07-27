@@ -1,0 +1,358 @@
+//imports
+@import '/nib'
+@import './css/animate.css'
+@import './css/normalize.css'
+@import '../fonts/style.css'
+@import '../fonts/font-awesome.min.css'
+// vars
+charcoalGrey = rgb(40, 43, 49)
+red = rgb(208, 0, 0)
+darkCharcoal = rgb(50, 54, 60)
+sunYellow = rgb(255, 205, 0)
+//->Global rules
+*
+  font-size 16px
+  font-family 'Avenir Next LT Pro Regular', sans-serif
+  transition all .3s linear
+//-> General container
+.wrapper
+  width 100%
+  height 100%
+  position absolute
+  background charcoalGrey
+  left 0px
+  top 0px
+//-> Header
+  .header
+    width 100%
+    height 100px
+    background red url(../assets/noltflix-logo.png) no-repeat 100px 37px
+    box-sizing 2px 2px 2px black
+    position relative
+    .userBox
+      width 156px
+      height 100%
+      background url(../assets/user.svg) no-repeat left center
+      float right
+      position relative
+      margin-right 45px
+      color #fff
+      text-align center
+      p
+        margin 42px 0 30px 0
+        cursor pointer
+        font-size 14px
+        font-family 'Avenir Next LT Pro Bold', sans-serif
+        background url(../assets/icon-down-arrow.svg) no-repeat right center
+      .menu
+        z-index 99
+        position absolute
+        width 100%
+        background linear-gradient(to bottom, rgba(163,0,0,1) 0%, rgba(208,0,0,1) 100%)
+        top 72px
+        ul
+          list-style none
+          padding 0px
+          li
+            padding 20px 0px
+            transition all .4s ease-out
+            cursor pointer
+            &:hover
+              background rgba(0,0,0,.2)
+              transition all .4s ease-out
+              font-family 'Avenir Next LT Pro Bold', sans-serif
+    .searchBox
+      width 300px
+      height 55px
+      width 276px
+      float right
+      margin-top 23px
+      margin-right 103px
+      background rgba(0, 0, 0, 0.25)
+      button
+        width 24px
+        height 24px
+        float right
+        border none
+        outline none
+        padding 0px
+        margin 15px 25px 16px 0
+        background url(../assets/icon-search.svg) no-repeat 100% center
+        cursor pointer
+      input
+        background transparent
+        padding 10px 0px 10px 25px
+        border none
+        outline none
+        color rgba(255,255,255,.8)
+        width calc(100% - 100px)
+        margin 8.75px 25px 8.75px 0px
+        transition all .3s linear
+        &:focus
+          color #fff
+    .searchBoxMob
+      display none
+//->Footer
+  .footer
+    width 100%
+    height 100px
+    background darkCharcoal
+    position fixed
+    bottom 0px
+    left 0px
+    p
+      margin 0px
+      padding 43px 0px
+      color rgba(250,250,250,.5)
+      text-align center
+      font-size 14px
+//->Overlay
+.overlay
+  width 100%
+  height 100%
+  position fixed
+  background rgba(255,255,255,.75)
+  top 0px
+  left 0px
+  z-index 9
+  .inner,.noBack
+    width 50%
+    height 30%
+    background charcoalGrey
+    text-align center
+    box-shadow 2px 2px 2px black
+    left 25%
+    top 35%
+    position absolute
+    z-index 9
+    p
+      margin-top 50px
+      color rgba(255,255,255,.75)
+    button
+      background red
+      color #fff
+      border none
+      padding 10px 25px
+      font-weight lighter
+      box-shadow 2px 2px 2px black
+  .noBack
+    background transparent
+    box-shadow none
+    h1
+      color charcoalGrey
+    i
+      font-size 100px
+      color charcoalGrey
+//->core page
+.noContent
+  width 100%
+  height 100%
+  .inner
+    position absolute
+    width 50%
+    height 30%
+    top 35%
+    left 25%
+    text-align center
+    h1
+      color #fff
+      text-shadow 5px 4px 2px black
+.contentHolder
+  width 100%
+  height calc(100% - 200px)
+  overflow hidden
+  .scrollSuit
+    height calc(100% - 50px)
+    overflow-x scroll
+    margin-top 50px
+    .breadcumber
+      width 100%
+      position relative
+      margin-left 103px
+      position fixed
+      background charcoalGrey
+      z-index 9
+      span
+        position absolute
+        left -50px
+        font-weight lighter
+        cursor pointer
+        i
+          color #fff
+          font-size 35px
+        &:hover
+          text-shadow 2px 2px 2px rgba(0,0,0,.5)
+      h3
+        font-size 32px
+        color #fff
+        font-weight lighter
+        margin 0px
+    .element
+      margin-top 30px
+      display block
+      color sunYellow
+      font-weight lighter
+    .movie
+      margin-top 40px
+      display block
+      margin-bottom 30px
+      margin-left 103px
+    .series
+      display block
+      margin-bottom 30px
+      margin-left 103px
+    .movie, .series
+      .thumbnail
+        position relative
+        width 275px
+        height 279px
+        box-shadow 3px 5px 5px 2px rgba(0,0,0,.6)
+        display inline-block
+        margin-right 45px
+        margin-top 45px
+        &:hover
+          cursor pointer
+          .hover
+            display block
+            position absolute
+            width 100%
+            height 100%
+            left 0px
+            top 0px
+            background rgba(0,0,0,.6)
+            .half
+              width 49.5%
+              display inline-block
+              height 100%
+              position relative
+              i
+                color rgba(255,255,255, .5)
+                font-size 90px
+                transform translate(-50%, -50%)
+                top 50%
+                left 50%
+                position absolute
+                transition all .3s ease-out
+                &:hover
+                  color rgba(255,255,255,.75)
+        .hover
+          display none
+        .img
+          width 100%
+          height 155px
+          background-repeat no-repeat !important
+          background-size cover !important
+          background-position top center !important
+        .description
+          width 100%
+          background darkCharcoal
+          h3
+            width calc(100% - 15px)
+            margin 0
+            padding 0
+            padding-top 13px
+            padding-left 15px
+            color #fff
+            font-size 18px
+            font-family 'Avenir Next LT Pro Medium Condensed', sans-serif
+            font-weight lighter
+            float none
+            text-align left
+          .specs, .cal
+            width calc(100% - 15px)
+            padding-left 15px
+            margin-top 9px
+            height 26px
+            background darkCharcoal
+            span, .rank
+              width 49.5%
+              float left
+              color rgba(255,255,255,.2)
+              font-size 14px
+              //padding 9.5px 0
+              &:last-child
+                width calc(49.5% - 14px)
+                text-align right
+                margin-right 14px
+              &.star,.halfStar
+                width 15px
+                height 14px
+                margin-left 5px
+                color red
+          .cal
+            background charcoalGrey
+            padding-top 11px
+            padding-bottom 10px
+            span
+              color rgba(255,255,255,.75)
+              margin 11px 0px 10px 0px
+@media screen and (max-width: 850px)
+  .wrapper
+    transition all .3s ease
+    .header
+      background red url(../assets/noltflix-logo.png) no-repeat center
+      .userBox
+        width 45px
+        background-position center
+        float left
+        p
+          display none
+        .menu
+          position fixed
+      .searchBox
+        display none
+      .searchBoxMob
+        display block
+        height 55px
+        width 50px
+        float right
+        margin-top 23px
+        button
+          width 24px
+          height 24px
+          float right
+          border none
+          outline none
+          padding 0px
+          margin 15px 25px 16px 0
+          cursor pointer
+          background none
+          font-size 25px
+          color #fff
+        .searchMob
+          position absolute
+          left 0px
+          width 100%
+          background red
+          top 100px
+          background rgba(0, 0, 0, 0.25)
+          button
+            width 24px
+            height 24px
+            float right
+            border none
+            outline none
+            padding 0px
+            background url(../assets/icon-search.svg) no-repeat 100% center
+            margin 15px 25px 16px 0
+            cursor pointer
+          input
+            background transparent
+            padding 10px 0px 10px 25px
+            border none
+            outline none
+            color rgba(255,255,255,.8)
+            width calc(100% - 100px)
+            margin 8.75px 25px 8.75px 0px
+            transition all .3s linear
+            &:focus
+              color #fff
+  .contentHolder
+    .scrollSuit
+      .movie, .series
+        text-align center
+        margin-left 0px
+        .element
+          text-align left
+          width 100%
+          margin-left 103px
