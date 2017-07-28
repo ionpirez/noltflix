@@ -143,6 +143,22 @@ sunYellow = rgb(255, 205, 0)
     i
       font-size 100px
       color charcoalGrey
+//->loading
+.loading
+  width 100%
+  height 100%
+  position absolute
+  text-align center
+  .inner
+    position absolute
+    top calc(50% - 160px)
+    left calc(50% - 80px)
+    width 100px
+    height 100px
+    animation spin 3s infinite
+  i
+    font-size 100px
+    color #fff
 //->core page
 .noContent
   width 100%
@@ -356,3 +372,13 @@ sunYellow = rgb(255, 205, 0)
           text-align left
           width 100%
           margin-left 103px
+@css{
+@-webkit-keyframes spin {
+    from {
+      transform:rotate(0deg)
+    }
+    to {
+      transform:rotate(360deg)
+    }
+}
+}

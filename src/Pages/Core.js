@@ -15,6 +15,7 @@ class Core extends Component{
       data.json().then((json)=>{
         const items = json.data
         this.setState({items})
+        this.setState({search:false})
       })
     })
   }
@@ -30,8 +31,8 @@ class Core extends Component{
           else{
             let response = []
             response[0] = json
-            this.setState({search:true})
             this.setState({items:response})
+            this.setState({search:true})
           }
         })
       })
@@ -49,6 +50,7 @@ class Core extends Component{
           type:'add'
         }
         this.props.action(type)
+        this.setState({search:false})
       })
     })
   }
@@ -61,8 +63,8 @@ class Core extends Component{
         const type = {
           type:'delete'
         }
-        this.setState({search:true})
         this.props.action(type)
+        this.setState({search:false})
       })
     })
   }
@@ -79,7 +81,11 @@ class Core extends Component{
     const state = this.state
     if(state.items === false){
       return(
-        <p>Cargando ... .. .</p>
+        <div className="loading">
+          <div className="inner">
+            <i className="fa fa-spinner" aria-hidden="true"></i>
+          </div>
+        </div>
       )
     }
     else{
