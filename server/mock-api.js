@@ -65,5 +65,5 @@ app.delete('/api/favorites/:id', function(req,res){
 });
 var port = 5000;
 
-app.listen(port);
+app.listen(process.env.PORT || 5000);
 console.log('Mock server running on port ' + port);
